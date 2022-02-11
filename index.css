@@ -1,0 +1,196 @@
+* {
+    background: #000000;
+    color: white;
+    font-family: interlight;
+    font-size: 14;
+}
+ @font-face {
+        font-family: interthin;
+        src: url();
+    }
+ @font-face {
+        font-family: intermedium;
+        src: url(./fonts/Inter-Medium.ttf);
+    }
+ @font-face {
+        font-family: interregular;
+        src: url(./fonts/Inter-Regular.ttf);
+    }
+ @font-face {
+        font-family: interbold;
+        src: url(./fonts/Inter-Bold.ttf);
+    }
+ @font-face {
+        font-family: interblack;
+        src: url(./fonts/Inter-Black.ttf);
+    }
+ @font-face {
+        font-family: interlight;
+        src: url(./fonts/Inter-Light.ttf);
+    }
+ @font-face {
+        font-family: intersemibold;
+        src: url(./fonts/Inter-SemiBold.ttf);
+    }
+ @font-face {
+        font-family: interextralight;
+        src: url(./fonts/Inter-ExtraLight.ttf);
+    }
+ @font-face {
+        font-family: interextrabold;
+        src: url(./fonts/Inter-ExtraBold.ttf);
+    }
+body{
+    margin: 0;
+
+}
+a {
+ text-decoration: none;
+}
+li {
+ list-style: none;
+}
+.button {
+    padding: 10px 50px;
+    background-color: #fdc201;
+    color: #263238;
+    font-family: interextrabold;
+    border: none;
+    border-radius: 4px;
+    margin-top: 30px;
+}
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin: 0 auto;
+
+}
+.rightimg {
+    width: 40%;
+    margin-left: 10%;
+}
+.rightdivhero {
+    width: 70%;
+}
+.rightdivheroheader {
+    font-size: 35px;
+        font-family: interbold;
+}
+span{
+    color: #fdc201;
+    font-size: 25px;
+    font-family: interblack;
+}
+/* NAVBAR STYLING STARTS */
+.navbar {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ background-color: rgb(0, 0, 0);
+ color: #fff;
+ width: 90%;
+ margin: 0 auto;
+}
+.nav-links a {
+ color: #fff;
+ font-size: 13px;
+
+}
+/* LOGO */
+.logo {
+ width: 15%;
+}
+/* NAVBAR MENU */
+.menu {
+ display: flex;
+ gap: 1em;
+ font-size: 14px;
+}
+.menu li a:hover {
+    color: white;
+    text-decoration: none;
+}
+.menu li:hover {
+ background-color: #1d1d1d;
+ border-radius: 5px;
+ transition: 0.3s ease;
+}
+.menu li {
+ padding: 5px 14px;
+}
+/* DROPDOWN MENU */
+.services {
+ position: relative; 
+}
+.dropdown li + li {
+ margin-top: 10px;
+}
+.dropdown li {
+ padding: 0.5em 1em;
+ width: 8em;
+ text-align: center;
+}
+.dropdown li:hover {
+ background-color: #1a1a1a;
+}
+.services:hover .dropdown {
+ display: block;
+}
+
+/*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+ display: none;
+} 
+/*HAMBURGER MENU*/
+.hamburger {
+ display: none;
+ font-size: 24px;
+ user-select: none;
+}
+.sectionheader {
+    text-align: center;
+    font-size: 40px;
+    font-family: interextrabold;
+    margin-top: 80px;
+
+}
+
+
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+.menu { 
+ display:none;
+ position: absolute;
+ background-color:rgb(19, 19, 19);
+ right: 0;
+ left: 0;
+ text-align: center;
+ padding: 16px 0;
+}
+.menu li:hover {
+ display: inline-block;
+ background-color:#1a1a1a;
+ transition: 0.3s ease;
+}
+.menu li + li {
+ margin-top: 12px;
+}
+input[type=checkbox]:checked ~ .menu{
+ display: block;
+}
+.hamburger {
+ display: block;
+}
+.dropdown {
+ left: 50%;
+ top: 30px;
+ transform: translateX(35%);
+}
+.dropdown li:hover {
+ background-color: #4c9e9e;
+}
+}
