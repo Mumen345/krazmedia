@@ -1,51 +1,51 @@
 * {
-    background: #000000;
-    color: white;
-    font-family: interlight;
-    font-size: 14;
+    color: #ebebeb;
+    font-family: robotolight;
+    font-size: 14px;
+}
+html{
+    scroll-behavior: smooth;
 }
  @font-face {
-        font-family: interthin;
-        src: url();
+        font-family: robotothin;
+        src: url(./fonts/Roboto-Thin.ttf);
     }
  @font-face {
-        font-family: intermedium;
-        src: url(./fonts/Inter-Medium.ttf);
+        font-family: robotolight;
+        src: url(./fonts/Roboto-Light.ttf);
     }
  @font-face {
-        font-family: interregular;
-        src: url(./fonts/Inter-Regular.ttf);
+        font-family: robotoblack;
+        src: url(./fonts/Roboto-Black.ttf);
     }
  @font-face {
-        font-family: interbold;
-        src: url(./fonts/Inter-Bold.ttf);
+        font-family: robotobold;
+        src: url(./fonts/Roboto-Bold.ttf);
     }
  @font-face {
-        font-family: interblack;
-        src: url(./fonts/Inter-Black.ttf);
+        font-family: robotomedium;
+        src: url(./fonts//Roboto-Medium.ttf);
     }
  @font-face {
-        font-family: interlight;
-        src: url(./fonts/Inter-Light.ttf);
+        font-family: robotolight;
+        src: url(./fonts/Roboto-Light.ttf);
     }
  @font-face {
-        font-family: intersemibold;
-        src: url(./fonts/Inter-SemiBold.ttf);
+        font-family: robotothin;
+        src: url(./fonts/Roboto-Thin.ttf);
     }
  @font-face {
-        font-family: interextralight;
-        src: url(./fonts/Inter-ExtraLight.ttf);
-    }
- @font-face {
-        font-family: interextrabold;
-        src: url(./fonts/Inter-ExtraBold.ttf);
+        font-family: robototblack;
+        src: url(./fonts/Roboto-Black.ttf);
     }
 body{
     margin: 0;
+    background: #000000;
 
 }
 a {
  text-decoration: none;
+ background-color: none;
 }
 li {
  list-style: none;
@@ -53,11 +53,14 @@ li {
 .button {
     padding: 10px 50px;
     background-color: #fdc201;
-    color: #263238;
-    font-family: interextrabold;
+    color: #232d31;
+    font-family: robotoblack;
     border: none;
     border-radius: 4px;
     margin-top: 30px;
+}
+.container-hero {
+    height: 100vh;
 }
 .hero {
     display: flex;
@@ -66,10 +69,11 @@ li {
     align-items: center;
     width: 75%;
     margin: 0 auto;
+    padding-top: 70px;
 
 }
 .rightimg {
-    width: 40%;
+    width: 45%;
     margin-left: 10%;
 }
 .rightdivhero {
@@ -77,22 +81,30 @@ li {
 }
 .rightdivheroheader {
     font-size: 35px;
-        font-family: interbold;
+        font-family: robotobold;
+        color: #f2f2f2
+}
+.rightdivherobio {
+    font-size:14px ;
+    line-height: 30px;
+        color: #f2f2f2
 }
 span{
     color: #fdc201;
     font-size: 25px;
-    font-family: interblack;
+    font-family: robotoblack;
 }
 /* NAVBAR STYLING STARTS */
 .navbar {
  display: flex;
  align-items: center;
  justify-content: space-between;
- background-color: rgb(0, 0, 0);
  color: #fff;
- width: 90%;
- margin: 0 auto;
+ width: 100%;
+ position: fixed;
+ background-color: #000000;
+ box-shadow: rgba(90, 94, 5, 0.289) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+ z-index: 100;
 }
 .nav-links a {
  color: #fff;
@@ -109,12 +121,14 @@ span{
  gap: 1em;
  font-size: 14px;
 }
+ul {
+    background-color: none;
+}
 .menu li a:hover {
-    color: white;
-    text-decoration: none;
+    text-decoration: underline;
 }
 .menu li:hover {
- background-color: #1d1d1d;
+ background-color: none;
  border-radius: 5px;
  transition: 0.3s ease;
 }
@@ -125,39 +139,253 @@ span{
 .services {
  position: relative; 
 }
-.dropdown li + li {
- margin-top: 10px;
-}
-.dropdown li {
- padding: 0.5em 1em;
- width: 8em;
- text-align: center;
-}
-.dropdown li:hover {
- background-color: #1a1a1a;
-}
-.services:hover .dropdown {
- display: block;
-}
-
-/*RESPONSIVE NAVBAR MENU STARTS*/
-/* CHECKBOX HACK */
-input[type=checkbox]{
- display: none;
-} 
-/*HAMBURGER MENU*/
-.hamburger {
- display: none;
- font-size: 24px;
- user-select: none;
-}
 .sectionheader {
     text-align: center;
     font-size: 40px;
-    font-family: interextrabold;
-    margin-top: 80px;
+    font-family: robototblack;
+    padding-top: 60px;
 
 }
+.sectiontwodiv {
+    text-align: center;
+    border-radius: 30px;
+    width: 30%;
+    padding: 20px;
+    margin-right: 100px;
+    background-color: rgba(0, 0, 0, 0.446);
+}
+.sectiontwodiv:hover {
+    background-color: rgba(255, 255, 255, 0.076);
+ transition: 0.9s ease;
+    cursor: pointer;
+}
+.sectiontwodiv2 {
+    text-align: center;
+    border-radius: 30px;
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0.446);
+    padding: 20px;
+}
+.sectiontwodiv2:hover {
+    background-color: rgba(255, 255, 255, 0.076);
+ transition: 0.9s ease;
+    cursor: pointer;
+}
+.sectiontwo {
+   width: 80%;
+    margin: 80px auto;
+    display: flex;
+    justify-content: center;
+}
+.sectiontwoheader {
+    font-family: robototblack;
+    color: #f7f7f7;
+    font-size: 22px;
+}
+.sectiontwowriteup {
+    font-family: robotothin;
+    color: #f7f7f7;
+    line-height: 25px;
+}
+.sectiontwo img {
+    width: 100px;
+}
+.whychooseusmaindiv {
+    margin-top: 50px;
+    background-color: #0A0A0A;
+}
+.whychooseusdiv {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.mojo {
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: rgba(43, 43, 43, 0.15) 0px 2px 8px;
+    text-align: center;
+}
+#services {
+    height: 100vh;
+    background-attachment: fixed;
+    background-size:cover;
+    background-blend-mode: overlay;
+    background-color: #0A0A0A;
+}
+.section-container {
+    background: #000000c9 url("./images/colleagues-studying-university-library.jpg") no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    background-size:cover;
+    background-blend-mode: overlay;
+}
+.whychooseusdiv-header {
+    font-size: 40px;
+    font-family: robototblack;
+}
+.whychooseusdiv-writeup{
+      line-height: 25px;
+          color: #f2f2f2;
+          text-align: justify;
+}
+.teams_div {
+  
+    flex-wrap: wrap;
+    padding: 25px;
+    background-color: #1f1f1f31;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    margin: 10px;
+
+}
+.double_team {
+    /* display: flex;
+    width: 90%;
+    flex-direction: column;
+    margin: 20px auto */
+
+}
+.team_double {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    flex-wrap: wrap;
+}
+.ceo_div{
+    width: 60%;
+    margin: 50px auto;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#meettheteam {
+    padding: 20px;
+     background: #000000e2 url("./images/operator-hot-line-portrait-cheerful-african-customer-service-representative-with-headset-call-center.jpg") no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    background-size:cover;
+    background-blend-mode: overlay;
+}
+#meettheteam p {
+    font-family: robotobold;
+    font-size: 30px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 60px;
+}
+.subheading{
+    font-size: 14px;
+    text-align: center;
+    font-family: robotolight;
+}
+.skew-cc{
+  width:100%;
+  height:100px;
+  position:absolute;
+  left:0px;
+  background: linear-gradient(to right bottom, #000000 49%, #0a0a0a 50%),    linear-gradient(-50deg, #ffffff 16px, #000 0);
+}
+.skew-c{
+  width:100%;
+  height:100px;
+  position:absolute;
+  left:0px;
+  background: linear-gradient(to left bottom, #0a0a0a 49%, #000000 50%);
+}
+.teams_name {
+    font-size: 20px;
+    color: #FF8080;
+    font-family: robotobold;
+}
+.rest_of_the_team {
+    color: #fdc201;
+    font-size: 25px;
+    font-family: robotobold;
+    text-align: center;
+    margin: 80px 0;
+}
+.ourservices_header {
+    font-size: 40px;
+    font-family: robotoblack;
+    text-align: center;
+}
+.ourservices {
+    padding:30px 0;
+}
+
+/* ########################################### */
+.center { text-align: center; }
+
+.container {
+  width: 65%;
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.episode {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  position: relative;
+}
+
+.episode__number {
+  font-size: 10vw;
+  font-weight: 600;
+  padding: 10px 0;
+  position: sticky;
+  top: 50px;
+  text-align: center;
+  height: 30vh;
+  transition: all 0.2s ease-in;
+}
+
+.episode__content {
+  border-top: 2px solid #fff;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 10px;
+  padding: 15px 0;
+}
+
+.episode__content .title {
+  font-weight: 600;
+  margin-right: 30px;
+}
+
+.episode__content .story {
+  line-height: 26px;
+}
+
+@media (max-width: 600px) {
+  .episode__content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .episode__content .story {
+    font-size: 15px;
+  }
+}
+/* ########################################### */
+footer{
+    text-align: center;
+}
+
+
+
+
+
 
 
 /* APPLYING MEDIA QUERIES */
@@ -177,7 +405,7 @@ input[type=checkbox]{
  transition: 0.3s ease;
 }
 .menu li + li {
- margin-top: 12px;
+ /* margin-top: 12px; */
 }
 input[type=checkbox]:checked ~ .menu{
  display: block;
@@ -185,12 +413,151 @@ input[type=checkbox]:checked ~ .menu{
 .hamburger {
  display: block;
 }
-.dropdown {
- left: 50%;
- top: 30px;
- transform: translateX(35%);
 }
-.dropdown li:hover {
- background-color: #4c9e9e;
+/*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+ display: none;
+} 
+/*HAMBURGER MENU*/
+.hamburger {
+ display: none;
+ font-size: 24px;
+ user-select: none;
 }
+
+#contactusdiv{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: "Open Sans";
+  width: 80%;
+  margin: 50px auto;
+  border-radius: 20px;
+}
+
+.education {
+  --bg-color: #ffd861;
+  --bg-color-light: #ffeeba;
+  --text-color-hover: #fff;
+  --box-shadow-color: rgba(255, 215, 97, 0.48);
+}
+
+.credentialing {
+  --bg-color: #B8F9D3;
+  --bg-color-light: #e2fced;
+  --text-color-hover: #fff;
+  --box-shadow-color: rgba(184, 249, 211, 0.48);
+}
+
+.wallet {
+  --bg-color: #CEB2FC;
+  --bg-color-light: #F0E7FF;
+  --text-color-hover: #fff;
+  --box-shadow-color: rgba(206, 178, 252, 0.48);
+}
+
+.human-resources {
+  --bg-color: #DCE9FF;
+  --bg-color-light: #f1f7ff;
+  --text-color-hover: #fff;
+  --box-shadow-color: rgba(220, 233, 255, 0.48);
+}
+
+.card {
+  width: 220px;
+  height: 345px;
+  background: #00000087;
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 14px 26px rgb(0, 0, 0);
+  transition: all 0.3s ease-out;
+  text-decoration: none;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+  box-shadow: 0 24px 36px rgba(0,0,0,0.11),
+    0 24px 46px var(--box-shadow-color);
+}
+
+.card:hover .overlay {
+  transform: scale(4) translateZ(0);
+}
+
+.card:hover .circle {
+  border-color: var(--bg-color-light);
+  background: var(--bg-color);
+}
+
+.card:hover .circle:after {
+  background: var(--bg-color-light);
+}
+
+.card:hover p {
+  color: var(--text-color-hover);
+}
+
+.card:active {
+  transform: scale(1) translateZ(0);
+  box-shadow: 0 15px 24px rgba(0,0,0,0.11),
+    0 15px 24px var(--box-shadow-color);
+}
+
+.card p {
+  font-size: 20px !important;
+  color: #c5c5c5;
+  margin-top: 16px;
+  z-index: 1000;
+  transition: color 0.3s ease-out;
+}
+
+.circle {
+  width: 131px;
+  height: 131px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease-out;
+}
+
+.circle:after {
+  content: "";
+  width: 118px;
+  height: 118px;
+  display: block;
+  position: absolute;
+  background: var(--bg-color);
+  border-radius: 50%;
+  top: 7px;
+  left: 7px;
+  transition: opacity 0.3s ease-out;
+}
+
+.circle svg {
+  z-index: 10000;
+  transform: translateZ(0);
+}
+
+.overlay {
+  width: 118px;
+  position: absolute; 
+  height: 118px;
+  border-radius: 50%;
+  background: var(--bg-color);
+  top: 70px;
+  left: 50px;
+  z-index: 0;
+  transition: transform 0.3s ease-out;
 }
