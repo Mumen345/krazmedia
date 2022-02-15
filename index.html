@@ -10,26 +10,34 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <script src="https://kit.fontawesome.com/aeac42a9eb.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="styles.scss">
+        <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+        
 </head>
 
 <body>
-    <nav class="navbar">
-        <!-- LOGO -->
-        <img class="logo" src="./images/logo_Banner-removebg-preview.png" alt="">
-        <!-- NAVIGATION MENU -->
-        <ul class="nav-links">
-            <!-- USING CHECKBOX HACK -->
-            <input type="checkbox" id="checkbox_toggle" />
-            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-            <!-- NAVIGATION MENUS -->
-            <div class="menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li> <a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+            <div class="nav-title">
+                <img class="logo" src="./images/logo_Banner-removebg-preview.png" alt="">
             </div>
-        </ul>
-    </nav>
+        </div>
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+    
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about" >About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Team</a>
+            <a href="#meettheteam">Contact</a>
+        </div>
+    </div>
     <div id="home" class="container-hero">
         <div class="hero">
             <div class="rightdivhero">
@@ -230,7 +238,7 @@
                         <p class="sectionheader">MEET THE TEAM</p>
                         <div class="ceo_div">
                             <img src="./images/team/efe.png" alt="">
-                            <p>CEO</p>
+                            <p class="teams_name">CEO</p>
                             <p>Efe Wilfred popularly known as Celebrity Dadie is a Husband, Father, Musician and tech enthusiast,
                                 who is
                                 passionate
@@ -281,8 +289,18 @@
                             </div>
                             <div class="teams_div">
                                 <img src="./images/team/hannah.png" alt="">
-                                <p class="teams_name">Hannah</p>
+                                <p class="teams_name">Tega</p>
                                 <p>
+                                    I’m TEGA MARTINS, Graduate of Delta State University.
+                                    Youtuber/Entrepreneur
+                                    C.E.O Western Waves international
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
                                 </p>
                             </div>
                             <div class="teams_div">
@@ -296,11 +314,17 @@
                                 </p>
                             </div>
                             <div class="teams_div">
-                                <img src="./images/team/tony.png" alt="">
-                                <p class="teams_name">Tony</p>
-                                <p>
+                                <img src="./images/team/abel.png" alt="">
+                                <p class="teams_name">Abel</p>
+                                <p>Creative director, content creator, Photographer and educator
+                                    I am from Enugu state, currently studying Political Science at Enugu State University of Science and
+                                    Technology.
+                                    I stand on a belief that knowledge should not be hidden but passed and imparted on to the younger
+                                    generation to
+                                    encourage, support them to build a better society.
                                 </p>
                             </div>
+                            
                             <div class="teams_div">
                                 <img src="./images/team/chi.png" alt="">
                                 <p class="teams_name">Chidinma</p>
@@ -324,15 +348,25 @@
                                 </p>
                             </div>
                             <div class="teams_div">
-                                <img src="./images/team/abel.png" alt="">
-                                <p class="teams_name">Abel</p>
-                                <p>Creative director, content creator, Photographer and educator
-                                    I am from Enugu state, currently studying Political Science at Enugu State University of Science and
-                                    Technology.
-                                    I stand on a belief that knowledge should not be hidden but passed and imparted on to the younger
-                                    generation to
-                                    encourage, support them to build a better society.
+                                <img src="./images/team/tony.png" alt="">
+                                <p class="teams_name">Tony</p>
+                                <p>
+                                    Tony George is an inventor, a professional graphics designer, a brand expert with over ten years experience and
+                                    a youths
+                                    empowerment enthusiast whose philosophy is centred on the principle of giving and receiving.
                                 </p>
+                                <p>Projects</p>
+                                <ul>
+                                    <li>
+                                        👉 Webet: A betting App with limitless possibilities ( incubative stage )
+                                    </li>
+                                    <li>
+                                        👉 Sign by proxy: A system that allows signatories within an organisation sign from anywhere
+                                    </li>
+                                    <li>
+                                        👉Energy wallet: A virtual storage facility for essential comodities (ongoing)
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
