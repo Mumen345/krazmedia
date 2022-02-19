@@ -62,6 +62,11 @@ li {
 .container-hero {
     height: 100vh;
 }
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .hero {
     display: flex;
     flex-direction: row;
@@ -78,7 +83,6 @@ li {
 }
 .rightdivhero {
     width: 70%;
-    height: 100vh;
 }
 .rightdivheroheader {
     font-size: 35px;
@@ -103,7 +107,7 @@ span{
     text-align: center;
     font-size: 40px;
     font-family: robototblack;
-    padding-top: 60px;
+    margin-top: 60px;
 
 }
 .sectiontwodiv {
@@ -168,12 +172,8 @@ span{
     box-shadow: rgba(43, 43, 43, 0.15) 0px 2px 8px;
     text-align: center;
 }
-#services {
-    height: 100vh;
-    background-attachment: fixed;
-    background-size:cover;
-    background-blend-mode: overlay;
-    background-color: #0A0A0A;
+#services{
+  background: #0a0a0a
 }
 .section-container {
     background: #000000c9 url("./images/colleagues-studying-university-library.jpg") no-repeat;
@@ -185,11 +185,15 @@ span{
 .whychooseusdiv-header {
     font-size: 40px;
     font-family: robototblack;
+    margin-top: 40px;
 }
 .whychooseusdiv-writeup{
       line-height: 25px;
           color: #f2f2f2;
           text-align: justify;
+}
+.link_up{
+  display: none;
 }
 .teams_div {
   
@@ -230,7 +234,7 @@ span{
 }
 #meettheteam {
     padding: 20px;
-     background: #000000e2 url("./images/operator-hot-line-portrait-cheerful-african-customer-service-representative-with-headset-call-center.jpg") no-repeat;
+     background: #000000cb url("./images/operator-hot-line-portrait-cheerful-african-customer-service-representative-with-headset-call-center.jpg") no-repeat;
     background-attachment: fixed;
     height: 100vh;
     background-size:cover;
@@ -327,17 +331,87 @@ span{
 }
 
 @media (max-width: 780px) {
-
+  .container {
+  width: 85%;
+  max-width: 1220px;
+  margin: 0 auto;
+}
+  .section-container {
+  height: auto;
+}
+.skew-c {
+  display: none;
+}
+.skew-cc {
+  display: none;
+}
  .episode__content {
     grid-template-columns: 1fr;
   }
    .episode__content .story {
     font-size: 15px;
   }
+  .sectiontwo {
+   width: 90%;
+    margin: -20px auto !important;
+    display: block;
+    box-sizing: border-box;
+}
+.sectiontwodiv2 {
+    text-align: center;
+    border-radius: 0;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.446);
+    padding: 20px;
+    margin-top: 20px;
+}
+.sectiontwodiv {
+    text-align: center;
+    border-radius: 0px;
+    width: 90% !important;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.446);
+}
+.sectiontwo {
+  display: flex;
+  flex-direction: column;
+}
+#home {
+  height: auto;
+}
+.sectionheader {
+   display: block;
+
+}
+.ceo_div {
+  width: 90%;
+  text-align: center;
+}
 }
 @media (max-width:480px) {
+  #services{
+  background: #000000
+}
+  .mojo {
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: rgba(43, 43, 43, 0.15) 0px 2px 8px;
+    text-align: center;
+    height: auto;
+}
+  .sectiontwo {
+   width: 100%;
+    margin: auto;
+    display: block;
+}
+.section-container {
+  height: auto;
+}
 .container-hero {
     height: 100vh;
+}
+.sectiontwodiv {
+    width: 100%;
 }
   .hero {
     display: flex;
@@ -352,8 +426,123 @@ span{
     width: 100%;
     height: 65vh;
 }
+
+}
+@media (max-width:350px) {
+
+  .sectionheader{
+    margin-top: 150px;  
+
+  }
+  #home {
+  height: 100;
+  text-align: center;
+}
+.button{
+  display: none;
+}
+
+.ceo_div {
+  width: 90%;
+}
+.teams_div{
+  display: block;
+    background-color: transparent;
+    border-radius: 20px;
+    text-align: center;
+    width: auto;
+    margin-top: 10px;
+}
+.mojo {
+  padding: 0;
+}
+
+
 }
 @media (max-width:1024px) {
+#meettheteam{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.link_up button{
+  background: red;
+  border: none;
+  color: #000;
+  outline: none;
+  padding: 7px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+.link_click_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.addressbar_header {
+  font-size: 18px;
+  text-decoration: underline;
+}
+.address {
+  margin-top: -100px;
+  font-size:20px !important;
+}
+.link_up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 100%;
+}
+.link_click p{
+  font-size: 14px !important;
+  /* margin-top: -0px !important; */
+}
+.link_click {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  margin-top: 30px;
+  border-radius: 50%;
+  padding: 20px;
+  margin: 20px;
+
+}
+.link_up_imgs {
+  width: 30px;
+  
+}
+#contactusdiv {
+  display: none !important;
+}
+  .card {
+  width: 220px;
+  height: 345px;
+  background: #00000087;
+  margin: 10px;
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 10px 20px rgb(0, 0, 0);
+  transition: all 0.3s ease-out;
+  text-decoration: none;
+}
+  .whychooseusdiv {
+  width: 90%;
+  height: none;
+}
+.mojo {
+  box-shadow: none;
+}
    .hero {
     display: flex;
     flex-direction: column;
@@ -444,7 +633,10 @@ margin: 0 auto;
 .nav > .nav-header {
   display: inline;
 }
-
+.logo {
+  z-index: 200;
+  width: 150px;
+}
 .nav > .nav-header > .nav-title {
   display: inline-block;
   font-size: 22px;
@@ -492,8 +684,7 @@ text-decoration: underline;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  font-family: "Open Sans";
-  width: 80%;
+  width: 100%;
   margin: 50px auto;
   border-radius: 20px;
 }
@@ -530,6 +721,7 @@ text-decoration: underline;
   width: 220px;
   height: 345px;
   background: #00000087;
+  margin: 10px;
   border-radius: 30px;
   overflow: hidden;
   display: flex;
@@ -537,7 +729,7 @@ text-decoration: underline;
   justify-content: center;
   align-items: center;
   position: relative;
-  box-shadow: 0 14px 26px rgb(0, 0, 0);
+  box-shadow: 0 10px 20px rgb(0, 0, 0);
   transition: all 0.3s ease-out;
   text-decoration: none;
 }
